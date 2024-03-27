@@ -1,7 +1,7 @@
 # Examens-Projekt-Wordpress
 
 ## Vad ska applikationen göra?
-Applikationen ska vara byggd för en förskola(Solstrålen) och visa deras information och olika sidor om deras förskola,personal,bilder osv.
+Applikationen ska vara byggd för en förskola(Solstrålen) och visa deras information och olika sidor om deras förskola,personal,bilder osv.Webbsidan är mest till för nya föräldrar.
 
 ## Tekniker och programspråk: Punktform vilka programspråk och applikationer ska användas
 * Wordpress
@@ -13,3 +13,9 @@ Applikationen ska vara byggd för en förskola(Solstrålen) och visa deras infor
 Jag ska göra detta för ett företag som heter Solstrålen, jag jobbar själv på projektet.
 
 ## Kravspecifikation: I punktform skriv ner funktionalitet som ska finnas implementerad inom projektets tidsram (den här punkten kan behöva preciseras mer när projektet startats upp i samråd med lärare)
+* Gjord för både desktop och mobil vy
+* Startsida med allmän information om förskolan och dess värderingar
+* Meny och navigering.  till exempel "Om oss",", "Bilder", "Kontakt","Kö anmälan"
+* Sökfunktion för att hitta vad man vill.
+* Kontaktformulär (Möjligvist om företaget vill ha det för email funktion)
+* Header funktions(gradient baserat på tid?, väder fetch? , någon annarn funktion)

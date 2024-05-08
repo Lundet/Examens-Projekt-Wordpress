@@ -14,7 +14,7 @@
 <footer id="colophon" class="site-footer">
     <div class="footer-content">
         <div class="logo">
-            <img src="http://solstrlens-frskola.local/wp-content/uploads/2024/05/logo-removebg-preview.png" alt="Logo 1" class="logo-footer">
+            <img src="http://localhost:10017/wp-content/uploads/2024/05/logo-2.png" alt="Logo 1" class="logo-footer">
         </div>
         <div class="text-content">
             <p>Kontaktuppgifter</p>

@@ -1094,9 +1094,6 @@ p {
 }
 
 .site-header {
-	background: linear-gradient(to bottom right, #191970, #FFA07A);
-	/* background: linear-gradient(to bottom, #FFFF99, #87CEEB);  */
-	/* background: linear-gradient(to top right, #FFDAB9, #87CEEB);  */
 	top: 0;
 	z-index: 2;
 	width: 100%;

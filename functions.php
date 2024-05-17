@@ -176,4 +176,8 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+function theme_enqueue_scripts() {
+    wp_enqueue_script( 'stickman-script', get_template_directory_uri() . '/js/stickman.js', array(), '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 

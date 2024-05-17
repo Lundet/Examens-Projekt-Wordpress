@@ -1094,8 +1094,8 @@ p {
 }
 
 .site-header {
-	/* background: linear-gradient(to bottom right, #191970, #FFA07A); */
-	background: linear-gradient(to bottom, #FFFF99, #87CEEB); 
+	background: linear-gradient(to bottom right, #191970, #FFA07A);
+	/* background: linear-gradient(to bottom, #FFFF99, #87CEEB);  */
 	/* background: linear-gradient(to top right, #FFDAB9, #87CEEB);  */
 	top: 0;
 	z-index: 2;
@@ -1140,9 +1140,9 @@ img.custom-logo {
 	align-content: center;
 	flex-basis: 0;
 	flex-grow: 1;
-	margin: 3rem;
+	/* margin: 3rem;
 	height: 350px;
-	width: 500px;
+	width: 500px; */
 }
 
 img {
@@ -1178,28 +1178,20 @@ div#wpcf7-f148-p15-o1 p {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    width: 80%;
+	max-width: 60%;
 }
 
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
-
-label,
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-	width: 100%;
-}
-
 textarea {
     width: 100%;
     height: 100px;
 	resize: none;
 	justify-content: center;
-    align-self: center; /* Centrera textarean vertikalt */
+	align-items: center;
 }
 
 

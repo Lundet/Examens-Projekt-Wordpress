@@ -1,29 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the stickman element
     var stickman = document.getElementById('stickman');
-  
-    // Initialize variables for debounce functionality
-    var timer = null;
-    var delay = 100; // Adjust the delay (in milliseconds) as needed
+    var frameWidth = 64; // Width of each frame in the sprite sheet
+    var totalFrames = 16; // Total number of frames in the sprite sheet
+    var animationSpeed = 200; // Adjust the animation speed (in milliseconds) as needed
 
-    // Initialize variables for interpolation functionality
+    // Initialize variables for smooth movement
     var currentPosition = { x: 0 }; // Initial position of the stickman
     var targetPosition = { x: 0 };   // Target position to interpolate towards
     var easing = 0.1;  // Easing factor for smooth movement
 
+    // Flag to track whether the stickman is moving
+    var isMoving = false;
+
     // Add mousemove event listener to the document
     document.addEventListener('mousemove', function(event) {
-        // Clear the previous timer (if any)
-        clearTimeout(timer);
-
         // Calculate the stickman's target horizontal position based on mouse cursor
         targetPosition.x = event.clientX - (stickman.offsetWidth / 2);
 
-        // Start a new timer to update stickman's position after a delay
-        timer = setTimeout(function() {
-            // Update the stickman's position using interpolation
-            updatePosition();
-        }, delay);
+        // Determine the direction of movement
+        if (targetPosition.x < currentPosition.x) {
+            // Moving left, use the second row
+            stickman.style.backgroundPositionY = '-80px';
+            isMoving = true;
+        } else if (targetPosition.x > currentPosition.x) {
+            // Moving right, use the third row
+            stickman.style.backgroundPositionY = '-160px';
+            isMoving = true;
+        } else {
+            // Stickman is still, display the first static picture
+            stickman.style.backgroundPositionY = '0px';
+            isMoving = false;
+        }
     });
 
     // Function to update stickman's position using interpolation
@@ -41,8 +48,20 @@ document.addEventListener('DOMContentLoaded', function() {
         stickman.style.left = currentPosition.x + 'px';
 
         // Continue updating the position until the stickman reaches the target position
-        if (Math.abs(dx) > 0.1) {
-            requestAnimationFrame(updatePosition);
-        }
+        requestAnimationFrame(updatePosition);
     }
+
+    // Start updating stickman's position using interpolation
+    updatePosition();
+
+    // Animate the stickman frames if it's moving
+    var currentFrame = 0;
+    setInterval(function() {
+        if (isMoving) {
+            // Increment the frame index
+            currentFrame = (currentFrame + 1) % totalFrames;
+            var backgroundPositionX = -currentFrame * frameWidth;
+            stickman.style.backgroundPositionX = backgroundPositionX + 'px';
+        }
+    }, animationSpeed);
 });

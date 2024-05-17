@@ -51,7 +51,6 @@
 
         <header id="masthead" class="site-header">
             <div id="stickman"></div>
-
             <div class="site-branding">
                 <?php
                 // the_custom_logo();

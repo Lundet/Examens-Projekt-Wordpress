@@ -1199,12 +1199,15 @@ textarea {
 
 #stickman {
     position: absolute;
-    top: 50px; /* Stickman's initial position at the top of the header */
+    top: 50px; /* Stickman's initial vertical position */
     left: 50%; /* Stickman's initial horizontal position */
     transform: translateX(-50%);
-    background-color: #000;
-    width: 50px; /* Stickman's width */
-    height: 100px; /* Stickman's height */
-    border-radius: 50%;
-    z-index: 0; 
+    width: 64px; /* Stickman's width */
+    height: 80px; /* Stickman's height */
+    background-image: url('images/lundet_guy.png'); /* Replace 'images/lundet_guy.png' with the path to your sprite sheet */
+    background-size: 400% auto; /* Adjust the background-size based on your sprite sheet dimensions */
+    background-position: 0 0; /* Initial position of the sprite sheet */
+    z-index: 0; /* Ensure the stickman is above other elements */
+    overflow: hidden;
 }
+

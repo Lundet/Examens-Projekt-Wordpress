@@ -27,13 +27,13 @@
 
             if (hour >= 6 && hour < 12) {
                 // Morning: 6 AM to 12 PM
-                header.style.background = 'linear-gradient(to bottom, #FFFF99, #87CEEB)';
+                header.style.background = 'linear-gradient(to top right, #FFDAB9, #87CEEB)';
             } else if (hour >= 12 && hour < 18) {
                 // Afternoon: 12 PM to 6 PM
-                header.style.background = 'linear-gradient(to bottom right, #191970, #FFA07A)';
+                header.style.background = 'linear-gradient(to bottom, #FFFF99, #87CEEB)';
             } else if (hour >= 18 && hour < 24) {
                 // Evening: 6 PM to 12 AM
-                header.style.background = 'linear-gradient(to top right, #FFDAB9, #87CEEB)';
+                header.style.background = 'linear-gradient(to bottom right, #191970, #FFA07A)';
             } else {
                 // Night: 12 AM to 6 AM
                 header.style.background = 'linear-gradient(to top right, #000000, #191970)';

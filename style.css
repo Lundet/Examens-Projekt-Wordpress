@@ -983,7 +983,9 @@ h1 {
 	width: 100%;
 	background: linear-gradient(to bottom, #FFFF99, #87CEEB);
 }
-
+footer p{
+	color: #3498DB;
+}
 .text-content {
 	text-align: center;
 	justify-content: center;

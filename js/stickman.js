@@ -7,13 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize variables for smooth movement
     var currentPosition = { x: 0 }; // Initial position of the stickman
     var targetPosition = { x: 0 };   // Target position to interpolate towards
-    var easing = 0.1;  // Easing factor for smooth movement
+    var easing = 0.02;  // Easing factor for smooth movement
 
     // Flag to track whether the stickman is moving
     var isMoving = false;
 
-    // Add mousemove event listener to the document
-    document.addEventListener('mousemove', function(event) {
+    // Add mousemove event listener to the header
+    var header = document.querySelector('.site-header');
+    header.addEventListener('mousemove', function(event) {
         // Calculate the stickman's target horizontal position based on mouse cursor
         targetPosition.x = event.clientX - (stickman.offsetWidth / 2);
 
@@ -27,6 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
             stickman.style.backgroundPositionY = '-160px';
             isMoving = true;
         } else {
+            // Stickman is still, display the first static picture
+            stickman.style.backgroundPositionY = '0px';
+            isMoving = false;
+        }
+    });
+
+    // Add mousemove event listener to the document to track movement outside the header
+    document.addEventListener('mousemove', function(event) {
+        // Check if the mouse is outside the header
+        if (!header.contains(event.target)) {
             // Stickman is still, display the first static picture
             stickman.style.backgroundPositionY = '0px';
             isMoving = false;

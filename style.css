@@ -1147,7 +1147,7 @@ img.custom-logo {
 	width: 500px; */
 }
 
-img {
+.wp-block-lcb-logo-carousel.alcb__active_pagination  img {
 	width: 500px;
 	max-height: 500px;
 }

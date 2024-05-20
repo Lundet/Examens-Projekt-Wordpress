@@ -58,6 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('stickmanX', currentPosition.x);
     });
 
+    // Add mouseout event listener to the header
+    header.addEventListener('mouseout', function() {
+        // Stickman is still, display the first static picture
+        stickman.style.backgroundPositionY = '0px';
+        isMoving = false;
+    });
+
     // Animate the stickman frames if it's moving
     var currentFrame = 0;
     setInterval(function() {

@@ -93,7 +93,7 @@
 	* `article` contexts in Chrome, Firefox, and Safari.
 	*/
 	h1 {
-    padding: 1.25em 2.375em;
+    
 		font-size: 36px;
 		margin:  0;
 	}
@@ -986,6 +986,7 @@
 	}
 
 	footer p {
+		font-weight: bold;
 		color: #3498DB;
 	}
 
@@ -1257,4 +1258,7 @@
 	.wp-block {
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+	h1.wp-block-heading.has-text-align-center.has-text-color.has-link-color.wp-elements-56381acecba6d45a43d71a0bdf5aebdc{
+		padding-top: 4rem;
 	}

@@ -93,9 +93,9 @@
 	* `article` contexts in Chrome, Firefox, and Safari.
 	*/
 	h1 {
-    
+
 		font-size: 36px;
-		margin:  0;
+		margin: 0;
 	}
 
 	/* Grouping content
@@ -707,44 +707,65 @@
 
 
 
-	
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
 
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}	
-@media screen and (max-width: 768px) {
-	.menu-toggle {
-		display: none;
-		/* Hide the menu toggle button */
-	}
-
-	.main-navigation ul{
+	/* Small menu. */
+	.menu-toggle,
+	.main-navigation.toggled ul {
 		display: block;
-		/* Display the navigation menu items as a block */
 	}
-	.main-navigation a {
-		font-size: 16px;
-		margin: 1rem;
-		padding: 0;
-		display: block;
-	}	
-	img.custom-logo {
-		width: 100px;
-		height: 100px;
+
+	@media screen and (min-width: 768px) {
+
+		.menu-toggle {
+			display: none;
+		}
+
+		.main-navigation ul {
+			display: flex;
+		}
+		.footer-content {
+			/* height: 210px; */
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
 	}
-}
+
+	@media screen and (max-width: 768px) {
+		.menu-toggle {
+			display: none;
+			/* Hide the menu toggle button */
+		}
+		.stickman{
+			display: none;
+		}
+
+		.main-navigation ul {
+			display: block;
+			/* Display the navigation menu items as a block */
+		}
+
+		.main-navigation a {
+			font-size: 16px;
+			margin: 1rem;
+			padding: 0;
+			display: block;
+		}
+
+		img.custom-logo {
+			width: 100px;
+			height: 100px;
+		}
+		img.logo-footer{
+			width: 100%
+		}
+		.footer-content {
+			/* height: 210px; */
+			display: block;
+		}
+	}
 
 
 
@@ -1005,7 +1026,7 @@
 	}
 
 	.site-footer {
-		height: 210px;
+		/* height: 210px; */
 		width: 100%;
 	}
 
@@ -1030,14 +1051,7 @@
 		height: 210px;
 	}
 
-	.footer-content {
-		height: 210px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
+
 
 	p {
 		color: #000000;
@@ -1180,10 +1194,6 @@
 		max-height: 500px;
 	}
 
-	img.logo-footer {
-		width: 300px;
-
-	}
 
 	.wp-container-core-columns-is-layout-2.wp-container-core-columns-is-layout-2 {
 		flex-wrap: nowrap;
@@ -1270,7 +1280,7 @@
 	/* Reset margins and padding on the container */
 	.wp-block-columns {
 		margin: 0;
-		
+
 	}
 
 	/* Prevent margin collapse between adjacent blocks */
@@ -1278,6 +1288,7 @@
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	h1.wp-block-heading.has-text-align-center.has-text-color.has-link-color.wp-elements-56381acecba6d45a43d71a0bdf5aebdc{
+
+	h1.wp-block-heading.has-text-align-center.has-text-color.has-link-color.wp-elements-56381acecba6d45a43d71a0bdf5aebdc {
 		padding-top: 4rem;
 	}

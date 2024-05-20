@@ -61,7 +61,7 @@
             footer.style.background = 'linear-gradient(to top right, #000000, #191970)';
         }
     });
-</script>s
+</script>
 </body>
 
 </html>

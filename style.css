@@ -707,22 +707,46 @@
 
 
 
-	/* Small menu. */
-	.menu-toggle,
-	.main-navigation.toggled ul {
+	
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}	
+@media screen and (max-width: 768px) {
+	.menu-toggle {
+		display: none;
+		/* Hide the menu toggle button */
+	}
+
+	.main-navigation ul{
 		display: block;
+		/* Display the navigation menu items as a block */
 	}
-
-	@media screen and (min-width: 37.5em) {
-
-		.menu-toggle {
-			display: none;
-		}
-
-		.main-navigation ul {
-			display: flex;
-		}
+	.main-navigation a {
+		font-size: 16px;
+		margin: 1rem;
+		padding: 0;
+		display: block;
+	}	
+	img.custom-logo {
+		width: 100px;
+		height: 100px;
 	}
+}
+
+
 
 	.site-main .comment-navigation,
 	.site-main .posts-navigation,
@@ -1117,8 +1141,8 @@
 
 	img.custom-logo {
 		z-index: 2;
-		width: 210px;
-		height: 210px;
+		/* width: 210px;
+		height: 210px; */
 	}
 
 	.wp-block-cover .wp-block-cover__inner-container,
@@ -1148,12 +1172,7 @@
 		align-content: center;
 		flex-basis: 0;
 		flex-grow: 1;
-		padding: 2rem;
-		margin: 2rem;
 		border-radius: 10px;
-		/* margin: 3rem;
-		height: 350px;
-		width: 500px; */
 	}
 
 	.wp-block-lcb-logo-carousel.alcb__active_pagination img {
@@ -1168,12 +1187,12 @@
 
 	.wp-container-core-columns-is-layout-2.wp-container-core-columns-is-layout-2 {
 		flex-wrap: nowrap;
-		height: 700px;
+		/* height: 700px; */
 	}
 
 	.wp-container-core-columns-is-layout-3.wp-container-core-columns-is-layout-3 {
 		flex-wrap: nowrap;
-		height: 700px;
+		/* height: 700px; */
 	}
 
 	div#wpcf7-f148-p15-o1 {

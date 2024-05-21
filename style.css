@@ -724,6 +724,11 @@
 		.footer-content {
 			display: flex;
 		}
+		footer p {
+			font-size: 13px;
+			color: #3498DB;
+		}
+
 	}
 
 	@media screen and (min-width: 768px) {
@@ -745,6 +750,11 @@
 			margin-right: 5%;
 		}
 
+		footer p {
+			color: #3498DB;
+		}
+
+
 		.row {
 			display: flex;
 			justify-content: space-between;
@@ -758,9 +768,18 @@
 			/* Hide the menu toggle button */
 		}
 
+		.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 {
+			padding: 0;
+		}
+
 		.main-navigation ul {
 			display: block;
 			/* Display the navigation menu items as a block */
+		}
+
+		footer p {
+			font-size: 16px;
+			color: #3498DB;
 		}
 
 		.row {
@@ -1049,11 +1068,6 @@
 		width: 100%;
 	}
 
-	footer p {
-		font-weight: bold;
-		color: #3498DB;
-	}
-
 	.text-content {
 		text-align: center;
 		justify-content: center;
@@ -1162,6 +1176,7 @@
 
 	.site-header {
 		top: 0;
+		position: sticky;
 		z-index: 2;
 		width: 100%;
 		height: 210px;
@@ -1247,7 +1262,6 @@
 		max-width: 60%;
 	}
 
-
 	textarea {
 		width: 100%;
 		height: 100px;
@@ -1259,7 +1273,7 @@
 
 	#stickman {
 		position: absolute;
-		top: 100px;
+		/* top: 100px; */
 		/* Stickman's initial vertical position */
 		left: 50%;
 		/* Stickman's initial horizontal position */
@@ -1306,14 +1320,29 @@
 
 	.wp-block-buttons>.wp-block-button {
 		margin: 1rem;
-	}   
-	 .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
-        flex-grow: 0;
-		margin:  1rem;
-    }
-	.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1{
+	}
+
+	.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
+		flex-grow: 0;
+		margin: 1rem;
+	}
+
+	.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 {
 		justify-content: center;
 	}
-	h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
+
+	h1.has-background,
+	h2.has-background,
+	h3.has-background,
+	h4.has-background,
+	h5.has-background,
+	h6.has-background {
 		padding: 0;
+	}
+
+	.contact-form-container {
+		justify-content: center;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 60%;
 	}

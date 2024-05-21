@@ -781,7 +781,8 @@
 
 		.footer-content {
 			/* height: 210px; */
-			display: block;
+			align-items: center;
+			flex-direction: column;
 		}
 	}
 
@@ -1208,7 +1209,7 @@
 	}
 
 	.wp-block-lcb-logo-carousel.alcb__active_pagination img {
-		width: 500px;
+		/* width: 500px; */
 		max-height: 500px;
 	}
 
@@ -1312,4 +1313,7 @@
     }
 	.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1{
 		justify-content: center;
+	}
+	h1.has-background, h2.has-background, h3.has-background, h4.has-background, h5.has-background, h6.has-background {
+		padding: 0;
 	}

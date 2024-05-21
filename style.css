@@ -92,11 +92,7 @@
 	* Correct the font size and margin on `h1` elements within `section` and
 	* `article` contexts in Chrome, Firefox, and Safari.
 	*/
-	h1 {
-
-		font-size: 36px;
-		margin: 0;
-	}
+	
 
 	/* Grouping content
 		========================================================================== */
@@ -419,7 +415,10 @@
 	}
 
 	p {
-		margin-bottom: 1.5em;
+		color: #000000;
+		font-size: 20px;
+		font: bold;
+		margin: 0.1rem;
 	}
 
 	dfn,
@@ -753,7 +752,11 @@
 		footer p {
 			color: #3498DB;
 		}
+		h1 {
 
+			font-size: 36px;
+			margin: 0;
+		}
 
 		.row {
 			display: flex;
@@ -766,6 +769,15 @@
 		.menu-toggle {
 			display: none;
 			/* Hide the menu toggle button */
+		}
+		h1{
+			text-align: center;
+		}
+		p {
+			font-size: 1rem;
+			text-align: center;
+			margin-left: 5%;
+			margin-right: 5%;
 		}
 
 		.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 {
@@ -802,6 +814,12 @@
 			/* height: 210px; */
 			align-items: center;
 			flex-direction: column;
+		}
+		h1.wp-block-heading.has-text-align-left.has-text-color.has-link-color.wp-elements-f1c0aabca76fdbbc2ef5fb9c31426e72 {
+			text-align: center;
+		}
+		.has-text-align-left {
+			text-align: center;
 		}
 	}
 
@@ -1086,12 +1104,7 @@
 
 
 
-	p {
-		color: #000000;
-		font-size: 20px;
-		font: bold;
-		margin: 0.1rem;
-	}
+
 
 	.text-content img {
 		width: 50px;

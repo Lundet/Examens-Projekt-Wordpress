@@ -33,7 +33,9 @@
             <p>solbarn.styrelse@gmail.com</p>
         </div>
         <div class="text-content">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="">
+            <a href="https://www.instagram.com/solstralensforskolapaarp/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram">
+            </a>
             <p>Instagram</p>
         </div>
     </div>

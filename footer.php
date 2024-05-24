@@ -25,7 +25,9 @@
         <div class="text-content">
             <p>Tel. 042- 22 95 40</p>
             <p>Mail: info@solbarn.se</p>
-            <p>Karta</p>
+            <a href="https://www.google.com/maps/place/Ekebergav%C3%A4gen+77,+253+51+P%C3%85ARP,+Sweden" target="_blank">
+                <p>Karta</p>
+            </a>
         </div>
         <div class="text-content">
             <p>Frågor om föräldrakooperativet,</p>

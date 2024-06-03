@@ -820,6 +820,7 @@
 		}
 		.has-text-align-left {
 			text-align: center;
+			margin: 20px;
 		}
 	}
 
@@ -1255,6 +1256,8 @@
 
 	div#wpcf7-f148-p15-o1 {
 		background-color: rgba(255, 236, 179, 1);
+		border-radius: 20px;
+		padding: 40px;
 
 	}
 
@@ -1337,7 +1340,7 @@
 
 	.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
 		flex-grow: 0;
-		margin: 1rem;
+		/* margin: 1rem; */
 	}
 
 	.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1 {
@@ -1358,4 +1361,7 @@
 		text-align: center;
 		margin: 0 auto;
 		max-width: 60%;
+	}
+	.more-padding{
+		padding: 0 5rem;
 	}

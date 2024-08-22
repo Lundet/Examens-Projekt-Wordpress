@@ -1,8 +1,3 @@
-# Preschool Site
-
-## Overview
-
-The [Preschool Site](https://solbarn.se/) is a web application designed to be user-friendly and informative for both parents and teachers at a preschool. It aims to provide essential information and a fun, interactive experience for its users.
 
 # Preschool Site
 
